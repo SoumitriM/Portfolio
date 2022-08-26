@@ -1,0 +1,23 @@
+.contact-outer-container {
+    clear: both;
+    margin-top: 10rem;
+    padding: 0rem 8rem;
+    background-image: linear-gradient(45deg, #435dcd 0%, #af3189 100%);
+    bottom: 0px;
+
+    .headline {
+        padding: 2rem 0rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(236, 236, 243);
+    }
+
+    .contact-label-text {
+        color: white;
+        font-size: 24px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

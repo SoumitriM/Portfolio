@@ -1,0 +1,37 @@
+.home-container {
+    margin-top: 5rem;
+    padding: 0rem 8rem;
+    margin-bottom: 15rem;
+}
+.introduction-container {
+    margin-top: 10rem;
+}
+.about-me-dp {
+    float: right;
+}
+.about-me-text {
+    float: left;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(77, 77, 78);
+}
+
+.intro-line-2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(77, 77, 78);
+    span {
+     color: rgb(121, 15, 182);
+    }
+}
+
+.about-me-links {
+    clear: both;
+    height: 40px;
+    width: 100%;
+    .react-icons {
+        color: white;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}

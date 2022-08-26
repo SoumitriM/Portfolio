@@ -1,0 +1,22 @@
+.projects-outer-container {
+    margin-top: 5rem;
+    padding: 0rem 8rem;
+    margin-bottom: 15rem;
+    .headline {
+        padding: 2rem 0rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(77, 77, 78);
+    }
+}
+
+.projects-container {
+    .child {
+        float: left;
+        margin: 5rem 1rem;
+    }
+
+    .child:nth-child(3n+1) {
+        clear: left;
+    }
+}
