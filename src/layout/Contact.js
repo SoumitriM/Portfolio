@@ -17,7 +17,7 @@ const Contact = () => {
             {/* <p className='contact-label-text'><span><IoLocationSharp/></span>Location - <span className='contact-text'>
                 Currently in West Bengal, India
             </span></p> */}
-            <h1 className='contact-label-text'>Thank You for visiting!</h1>
+            {/* <h1 className='contact-label-text'>Thank You for visiting!</h1> */}
             </IconContext.Provider>
         </div>
 
