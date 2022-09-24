@@ -41,10 +41,21 @@
 	padding: 0.5rem 0.5rem;
 	display: inline-block;
 	border-radius: 10px;
-	font-size: 12px;
+	font-size: 1rem;
 	background-color: rgb(131, 76, 163);
 	&:hover {
 		cursor: pointer;
 		background-color: rgb(85, 59, 201);
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.card-container {
+		padding: 1rem;
+		width: 14rem;
+		justify-content: center;
+	}
+	.project-name {
+		padding: 0.5rem 1rem;
 	}
 }

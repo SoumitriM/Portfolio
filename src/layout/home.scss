@@ -4,20 +4,21 @@
     margin-bottom: 15rem;
 }
 .introduction-container {
+    display: flex;
+    justify-content: space-around;
     margin-top: 10rem;
-}
-.about-me-dp {
-    float: right;
-}
-.about-me-text {
-    float: left;
     font-size: 3rem;
+}
+// .about-me-dp {
+
+// }
+.about-me-text {
+    //float: left;
     font-weight: 700;
     color: rgb(77, 77, 78);
 }
 
 .intro-line-2 {
-    font-size: 3rem;
     font-weight: 700;
     color: rgb(77, 77, 78);
     span {
@@ -26,13 +27,32 @@
 }
 
 .about-me-links {
-    clear: both;
-    height: 40px;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // height: 40px;
+    width: 50%;
     .react-icons {
         color: white;
-        padding: 1rem;
-        margin: 0rem 2rem;
-        font-size: 3rem;
+        // padding: 1rem;
+        // margin: 0rem 2rem;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .home-container {
+        padding: 0rem 3rem;
+    }
+    .introduction-container {
+        display: block;
+        text-align: center;
+    }
+    .about-me-text {
+        font-size: 2rem;
+    }
+    .about-me-links {
+        width: 100%;
+    }
+    .about-me-dp {
+        margin-top: 3rem;
+    }
+  }
