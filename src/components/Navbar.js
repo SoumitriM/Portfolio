@@ -26,7 +26,7 @@ const Navbar = () => {
     {console.log(navbarClassName)}
     <div className="hidden-div"></div>
     <ul>
-      <a href="/#" onClick={scrollToTop}><li>About</li></a>
+      <a href="#void" onClick={scrollToTop}><li>About</li></a>
       <a href="#project-section"><li>Projects</li></a>
       <a href="#contact-section"><li>Contact</li></a>
       <a href={require("./soumitri_resume.pdf")} 
