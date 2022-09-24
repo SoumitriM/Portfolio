@@ -26,14 +26,14 @@ const Navbar = () => {
     {console.log(navbarClassName)}
     <div className="hidden-div"></div>
     <ul>
-      <a href="#void" onClick={scrollToTop}><li>About</li></a>
+      <a href="#"><li>About</li></a>
       <a href="#project-section"><li>Projects</li></a>
       <a href="#contact-section"><li>Contact</li></a>
       <a href={require("./soumitri_resume.pdf")} 
       download="Soumitri_Resume" 
       target='_blank'
       rel="noreferrer">
-        <li>Download Resume</li>
+        <li> Download Resume</li>
       </a>
     </ul>
   </div>
