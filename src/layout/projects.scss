@@ -1,5 +1,4 @@
 .projects-outer-container {
-  margin-top: 5rem;
   padding: 0rem 8rem;
   margin-bottom: 15rem;
 
@@ -12,21 +11,21 @@
 }
 
 .projects-container {
-  .child {
-    float: left;
-    margin: 5rem 1rem;
-  }
-
-  .child:nth-child(3n+1) {
-    clear: left;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 900px) {
   .projects-outer-container {
     padding: 0rem 3rem;
   }
   .headline {
     text-align: center;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
   }
 }

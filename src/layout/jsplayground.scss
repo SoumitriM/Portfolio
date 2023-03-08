@@ -1,0 +1,47 @@
+.playground-outer-container {
+  margin-top: 5rem;
+  padding: 0rem 8rem;
+  margin-bottom: 15rem;
+
+  .headline {
+    padding: 2rem 0rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(77, 77, 78);
+  }
+}
+
+.playground-container {
+  a {
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(45deg, #435ccda1 0%, #ca75b1a1 100%);
+    &:hover {
+      transform: scale(105%, 120%);
+      font-weight: bold;
+      color: purple;
+    }
+  }
+}
+
+.iframe-element {
+  height: 500px;
+}
+
+@media only screen and (max-width: 900px) {
+  .playground-outer-container {
+    padding: 0rem 3rem;
+  }
+  .headline {
+    text-align: center;
+  }
+  .playground-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+}

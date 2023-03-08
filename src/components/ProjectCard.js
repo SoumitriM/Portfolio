@@ -6,7 +6,7 @@ const ProjectCard = ({projectPicture, altText, name, description, link}) => {
         <div><img className="project-img" src={projectPicture} alt={altText} /></div>
         <div className="project-desc">{description}</div>
         <div className="project-view"> 
-        <a href={link}><div className="project-view-btn">{link? "Open in new Tab" : "Work In Progress"}</div></a>
+        <a href={link} target='_blank' rel="noreferrer"><div className="project-view-btn">{link? "Open in new Tab" : "Work In Progress"}</div></a>
         </div>
     </div>
 }

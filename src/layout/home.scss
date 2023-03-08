@@ -1,19 +1,40 @@
 .home-container {
-    margin-top: 5rem;
     padding: 0rem 8rem;
-    margin-bottom: 15rem;
+    overflow: hidden;
 }
 .introduction-container {
     display: flex;
     justify-content: space-around;
     margin-top: 10rem;
     font-size: 3rem;
+    margin-bottom: 5rem;
 }
 // .about-me-dp {
 
 // }
+.intro-line-3 {
+    //transform: rotate(-120deg);
+    animation: rotateNow  2s linear infinite 5s;
+}
+
+@keyframes rotateNow {
+    0% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 .about-me-text {
-    //float: left;
     font-weight: 700;
     color: rgb(77, 77, 78);
 }
@@ -38,6 +59,30 @@
     }
 }
 
+// .skill-section {
+//   margin-top: 5rem;
+// }
+.sliding-skills {
+    display: flex;
+    height: 4.5rem;
+    width: 100%;
+    justify-content: space-between;
+    //animation: slide 9s linear infinite;
+    img {
+        max-width: 100px;
+        max-height: 100%;
+    }
+}
+
+// @keyframes slide {
+//     0% {
+//         transform: translate3d(0,0,0);
+//     }
+//     100% {
+//         transform: translate3d(-1692px, 0,0);
+//     }
+// }
+
 @media screen and (max-width: 1000px) {
     .home-container {
         padding: 0rem 3rem;
@@ -47,7 +92,7 @@
         text-align: center;
     }
     .about-me-text {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .about-me-links {
         width: 100%;
@@ -55,4 +100,11 @@
     .about-me-dp {
         margin-top: 3rem;
     }
+  }
+
+  .bar {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    height: 1px;
+    background-image: linear-gradient(45deg, #435ccda1 0%, #ca75b1a1 100%);
   }
