@@ -1,9 +1,11 @@
 import ProjectCard from "../components/ProjectCard";
 import projectList from "../projectList";
+import SectionHeader from "./SectionHeader";
 import './projects.scss';
 const Projects = () => {
+    const title= "Projects";
     return <div className="projects-outer-container" id="project-section">
-        <p className="headline">Projects</p>
+        <SectionHeader title={title}/>
         <div className="projects-container">
         {projectList.map(project => (
            <div className="child"><ProjectCard

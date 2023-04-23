@@ -1,0 +1,31 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  >div {
+    background: linear-gradient(62deg, rgb(255, 255, 255), rgba(0, 0, 255, 0.117));
+    box-shadow: 10px 2px 3px rgba(134, 108, 172, 0.166);
+    border-radius: 10%;
+    position: relative;
+    z-index: -1;
+    &::before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    img {
+      position: absolute;
+      max-width: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text {
+      margin: auto;
+    }
+  }
+}
+
+.skills-container {
+  margin: auto 8rem;
+}

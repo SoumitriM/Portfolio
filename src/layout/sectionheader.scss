@@ -1,0 +1,29 @@
+h1 {
+  overflow: hidden;
+  text-align: center;
+  //background-color: red;
+  margin: 5rem auto;
+  color: rgb(103, 15, 166);
+  font-size: 3rem;
+}
+
+h1:before,
+h1:after {
+  background-color: #6615df7e;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}

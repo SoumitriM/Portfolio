@@ -1,47 +1,61 @@
-.playground-outer-container {
-  margin-top: 5rem;
-  padding: 0rem 8rem;
-  margin-bottom: 15rem;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-  .headline {
-    padding: 2rem 0rem;
-    font-size: 3rem;
-    font-weight: 700;
-    color: rgb(77, 77, 78);
-  }
-}
+$color-text: #f9efef;
+$color-background: linear-gradient(to right bottom, #250df5, #170a79a7);
+$color-container: linear-gradient(
+	to right bottom,
+	rgba(229, 222, 228, 0.42),
+	rgba(35, 18, 224, 0.227)
+);
+$color-list: linear-gradient(to right bottom, #d65fe6, #2a10ed);
 
-.playground-container {
-  a {
-    display: block;
-    padding: 20px;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    background-image: linear-gradient(45deg, #435ccda1 0%, #ca75b1a1 100%);
-    &:hover {
-      transform: scale(105%, 120%);
-      font-weight: bold;
-      color: purple;
-    }
-  }
-}
 
-.iframe-element {
-  height: 500px;
-}
+.container {
+  margin: auto;
+	width: 40vw;
+	padding: 6rem;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	//position: relative;
+	border-radius: 3rem;
+	background: $color-container;
+  //background: red;
+  color: $color-text;
+	// 	List
+	ol {
+		margin: 0;
+		gap: 1rem;
+		padding: 0;
+		display: flex;
+		list-style: none;
+		place-items: center;
+		flex-direction: column;
+		counter-reset: my-counter;
 
-@media only screen and (max-width: 900px) {
-  .playground-outer-container {
-    padding: 0rem 3rem;
-  }
-  .headline {
-    text-align: center;
-  }
-  .playground-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: stretch;
-  }
+		li {
+      text-transform:  capitalize;
+			width: 100%;
+			text-align: center;
+			border-radius: 3rem;
+			background: $color-list;
+			counter-increment: my-counter;
+			padding: 1.1rem 1.5rem 1.1rem 1.5rem;
+      font-size: 1rem;
+      a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-text;
+      }
+			&::before {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-text;
+				content: counter(my-counter) ". ";
+			}
+      &:hover {
+        transform: scale(110%, 110%);
+      }
+		}
+	}
 }
