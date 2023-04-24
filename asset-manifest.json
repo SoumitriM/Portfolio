@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.91aaff49.css",
-    "main.js": "/Portfolio/static/js/main.4f608b43.js",
+    "main.css": "/Portfolio/static/css/main.edd02fa8.css",
+    "main.js": "/Portfolio/static/js/main.e4350d4b.js",
     "static/media/profilePic2.png": "/Portfolio/static/media/profilePic2.d2b615672aea1b116ac4.png",
     "static/media/csslogo.png": "/Portfolio/static/media/csslogo.19c8605d6b2861f5fbe0.png",
     "static/media/Soumitri_Resume_11_02_2023.pdf": "/Portfolio/static/media/Soumitri_Resume_11_02_2023.316f4c5b65bc97c28ecd.pdf",
@@ -9,11 +9,11 @@
     "static/media/reactlogo.png": "/Portfolio/static/media/reactlogo.44319306359c7112276d.png",
     "static/media/nextjs.svg": "/Portfolio/static/media/nextjs.e3c042b9d9d809ebb67e9bc6e1e5f70d.svg",
     "index.html": "/Portfolio/index.html",
-    "main.91aaff49.css.map": "/Portfolio/static/css/main.91aaff49.css.map",
-    "main.4f608b43.js.map": "/Portfolio/static/js/main.4f608b43.js.map"
+    "main.edd02fa8.css.map": "/Portfolio/static/css/main.edd02fa8.css.map",
+    "main.e4350d4b.js.map": "/Portfolio/static/js/main.e4350d4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.91aaff49.css",
-    "static/js/main.4f608b43.js"
+    "static/css/main.edd02fa8.css",
+    "static/js/main.e4350d4b.js"
   ]
 }
